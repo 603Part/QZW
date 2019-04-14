@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main"
+    tools:context=".activity.HomeActivity">
+
+    <include layout="@layout/title_bar" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qzw"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone"
+        />
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:AutoPlayTime="3000"
+        app:pointsContainerBackground="#44aaaaaa"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="12sp"
+        app:isShowNumberIndicator="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:pageChangeDuration="800"/>
+    <GridView
+        android:id="@+id/main_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:paddingLeft="60dp"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:numColumns="2"
+        />
+
+
+</LinearLayout>
